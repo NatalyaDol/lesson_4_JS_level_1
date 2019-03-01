@@ -9,9 +9,9 @@ var obj = {};
 var numInObj = function(number) {
     var answer = prompt('Введите трехзначное число');
    if (answer < 999) {
-        obj['единицы'] = answer[2];
-        obj['десятки'] = answer[1];
-        obj['сотни'] = answer[0];
+        obj['единицы'] = parseInt(answer[2]);
+        obj['десятки'] = parseInt(answer[1]);
+        obj['сотни'] = parseInt(answer[0]);
         console.log(obj);
    } else {
     console.log('Вы ввели не трехзначное число ' + obj);
